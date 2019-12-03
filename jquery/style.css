@@ -18,24 +18,33 @@ body{
 }
 
 .header{
-  max-width: 1112px;
+  max-width: 90px;
   margin: 0 auto;
-  height: 128px;
+  height: 120px;
 
 }
 
 .Logo{
-    display:inline-block;
+    
     height: 96px;
     padding: 15px;
+    float: left;
 }
 
 .Logo img{
     height: 100%;
 }
 
+
+/*display: none;*/
 .Hamburguer{
-    display: none;
+   background-color:#ff0000;
+   font-size: 2em;
+   color: #fff;
+   border-radius: 5px ;
+   text-decoration: none;
+   padding: 0px 8px 0px 8px;
+   margin: 0px 0px 0px 5px;
 }
 
 .Menu{
@@ -108,4 +117,50 @@ footer{
     cursor: pointer;
     right: 15px;
     bottom: 15px
+}
+
+
+/***************Tratamento responsivo*******/
+
+@media (max-width: 480px){
+
+    header{
+        height: 80px;
+    }
+
+    .Logo{
+        height:64px ;
+        padding: 12px;
+    }
+    .Hamburguer{
+        display:block;
+        float: right;
+        margin: 22px;
+    }
+
+    .Menu{
+        float: left;
+        width: 100%;
+        padding: 0;
+    }
+
+    .Menu ul{
+        background-color: #fff;
+        display: none; /*jquery fara o menu aparecer*/
+    }
+
+    .Menu ul li{
+        float: none;
+    }
+
+    .Menu ul li a{
+        padding: 15px;
+        display: block;
+    }
+    
+    .Destaque li {
+        float:none;
+    }
+
+
 }
